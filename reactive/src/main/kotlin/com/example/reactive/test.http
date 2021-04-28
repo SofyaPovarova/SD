@@ -1,0 +1,53 @@
+POST http://localhost:8080/api/users/add
+Content-Type: application/json
+
+{
+  "name": "Vasya",
+  "currency": "RUB"
+}
+
+####
+
+POST http://localhost:8080/api/users/add
+Content-Type: application/json
+
+{
+  "name": "Piotr",
+  "currency": "USD"
+}
+
+####
+
+POST http://localhost:8080/api/users/add
+Content-Type: application/json
+
+{
+  "name": "Oleg",
+  "currency": "EUR"
+}
+
+####
+GET http://localhost:8080/api/users/all
+Content-Type: application/json
+
+####
+POST http://localhost:8080/api/products/add
+Content-Type: application/json
+
+{
+  "name": "milk",
+  "currency": "EUR",
+  "price": 1.0
+}
+
+####
+GET http://localhost:8080/api/products/all/Vasya
+Content-Type: application/json
+
+####
+GET http://localhost:8080/api/products/all/Piotr
+Content-Type: application/json
+
+####
+GET http://localhost:8080/api/products/all/Oleg
+Content-Type: application/json
